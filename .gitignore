@@ -1,0 +1,21 @@
+# Compiled C executables
+*.out
+*.exe
+
+# Core dumps
+core
+core.*
+*.core
+
+# Debugger files
+.gdb_history
+
+# Build artifacts
+build/
+bin/
+
+# Editor/OS files
+.vscode/
+*.swp
+*.swo
+.DS_Store
