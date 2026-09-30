@@ -1,44 +1,60 @@
-# OS Debugging Project: Segmentation Faults and Memory Bugs
+# OSSP Debugging Project
 
-## Overview
+## C Program Debugging Using GCC, GDB and Valgrind
 
-This project demonstrates practical debugging of C programs in Linux/Ubuntu using:
+### 1. Project Overview
 
-- GCC
-- GDB
-- SIGSEGV
+This project demonstrates the process of identifying, analyzing,
+and fixing common C programming errors in a Linux environment.
+
+The project focuses on:
+
+- Segmentation faults
+- NULL pointer dereferencing
+- Out-of-bounds memory access
+- Memory debugging
 - Core dumps
-- Valgrind
-- Git
-
-The project focuses on two common classes of programming errors:
-
-1. Segmentation fault caused by NULL pointer dereference
-2. Memory leak caused by dynamically allocated memory not being freed
+- GDB debugging
+- Valgrind memory analysis
 
 ---
 
-## Project Structure
+## 2. Objectives
+
+The objectives of this project are:
+
+1. Understand common runtime errors in C.
+2. Generate and analyze a segmentation fault.
+3. Use GDB to identify the exact source of a crash.
+4. Use Valgrind to detect invalid memory accesses.
+5. Correct the identified programming errors.
+6. Verify the corrected program using debugging tools.
+7. Document the complete debugging workflow.
+
+---
+
+## 3. Technologies and Tools
+
+- Ubuntu Linux / WSL
+- C
+- GCC
+- GDB
+- Valgrind
+- Git
+- GitHub
+
+---
+
+## 4. Project Structure
 
 ```text
 OS-Debugging-Project/
 │
+├── README.md
 ├── src/
-│   ├── faults/
-│   │   ├── null_pointer.c
-│   │   └── memory_leak.c
-│   │
-│   └── fixed/
-│       ├── null_pointer_fixed.c
-│       └── memory_leak_fixed.c
+│   └── debug_demo.c
 │
-├── reports/
-│   ├── gdb/
-│   ├── core-dump/
-│   └── valgrind/
-│       ├── memory_leak_buggy.txt
-│       └── memory_leak_fixed.txt
+├── results/
+│   └── debugging_results.txt
 │
-├── screenshots/
-│
-└── README.md
+└── screenshots/
